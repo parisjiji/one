@@ -205,7 +205,7 @@ h3:after{
 }
 
 .box1 img{
-  display: block
+  display: block;
   width: 100px;
   height: 100px;
 }
