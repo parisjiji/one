@@ -110,12 +110,15 @@ nav div ul li{
   /* font-family: 'Montserrat', sans-serif;  */
   font-family: 'Forum', cursive;
   transition: 0.3s;
+  position: relative;
 }
+
 
 nav div ul li:hover{
   transform: scale(1.2);
-  color: lightcoral;
+  color: rgb(255, 154, 255);
 }
+
 
 
 /* main-viusal________________________________________________________________________ */
