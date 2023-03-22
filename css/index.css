@@ -1,0 +1,863 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+html{scroll-behavior: smooth;}
+
+body{
+  background: #e7e7e7;
+}
+
+
+/* top, insta, twitter 오른쪽 버튼 */
+
+
+.insta{
+  position: fixed;
+  right: 30px;
+  bottom: 90px;
+  z-index: 2;
+}
+
+.insta a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../image/instagram.png) no-repeat;
+  transition: 0.35s;
+}
+
+.insta a:hover{background: url(../image/instagram_on.png) no-repeat;}
+
+
+.face{
+  position: fixed;
+  right: 30px;
+  bottom: 150px;
+  z-index: 2;
+}
+
+.face a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../image/facebook.png) no-repeat;
+  transition: 0.35s;
+}
+
+.face a:hover{background: url(../image/facebook_on.png) no-repeat;}
+
+
+
+.top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 2;
+}
+
+.top a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../image/top.png) no-repeat;
+  transition: 0.35s;
+}
+
+.top a:hover{background: url(../image/top_on.png) no-repeat;}
+
+
+
+/* header_____________________________________________________________________________ */
+
+.page{
+  position: relative;
+}
+
+header{
+  width: 100%;
+  height: 170px;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  
+}
+
+nav{
+  width: 1200px;
+  height: 100vh;
+  /* border: 1px solid #000; */
+  color: #000;
+  text-align: center;
+  }
+
+nav img{
+  transform: translateY(16px);
+}
+
+nav div ul{
+  background-color: #111;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateY(24px);
+}
+nav div ul li{
+  float: left;
+  display: inline-block;
+  padding: 0px 10px 10px 50px;
+  font-size: 22px;
+  color: #fff;
+  /* font-family: 'Montserrat', sans-serif;  */
+  font-family: 'Forum', cursive;
+  transition: 0.3s;
+}
+
+nav div ul li:hover{
+  transform: scale(1.2);
+  color: lightcoral;
+}
+
+
+/* main-viusal________________________________________________________________________ */
+
+
+
+main{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-25%);
+  background: url(../image/dress.jpg) no-repeat center bottom fixed;
+  background-size: cover;
+  width: 1200px;
+  height: 650px;
+  transition: 0.9s;
+}
+main:hover{
+  background: url(../image/wedding.jpg) no-repeat center top fixed;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+main:hover div{
+  background: url(../image/signature_logo.png) no-repeat center right fixed;
+  background-size: 390px;
+  width: inherit;
+  height: inherit;
+  transition: 0.9s;
+  transform: translate(-20px,-30px);
+}
+
+main:hover p{
+  opacity: 0;
+}
+
+main div{
+  background: url(../image/thebride_logo.png) no-repeat center right;
+  background-size: 350px;
+  width: inherit;
+  height: inherit;
+  transition: 0.6s;
+  transform: translate(-60px,-60px);
+}
+
+
+
+/* section_________________________________________________________ */
+
+
+section{
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  transform: translateY(700px);
+}
+section div{
+  /* border: 1px solid blue; */
+}
+
+/* ///////////////////////////////////////////////////////////////////////about */
+
+
+.box1{
+  width: inherit;
+  height: 750px;
+  border-bottom: 1px solid #fff;
+  margin-top: 90px;
+}
+
+h3{
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Forum', cursive;
+  color: #111;
+}
+h3:before{
+  content: '-';
+}
+h3:after{
+  content: '-';
+}
+
+.box1{
+  
+}
+
+.box1 img{
+  display: block
+  width: 100px;
+  height: 100px;
+}
+.box1 img:nth-of-type(1){
+  width: 340px;
+  height: 177px;
+  transform: translate(434px,100px);
+}
+.box1 img:nth-of-type(2){
+  width: 500px;
+  height: 53px;
+  transform: translate(295px,170px);
+  margin-left: 70px;
+}
+
+
+  @keyframes ani{
+    0%{transform: translate(-170px,100px); color: rgba(255,255,255,0.1);}
+    1.5%{transform: translate(-160px,100px); color: rgba(255,255,255,0.1);}
+    3%{transform: translate(-150px,100px); color: rgba(255,255,255,0.2);}
+    4.5%{transform: translate(-140px,100px); color: rgba(255,255,255,0.3);}
+    6%{transform: translate(-130px,100px); color: rgba(255,255,255,0.4);}
+    7.5%{transform: translate(-120px,100px); color: rgba(255,255,255,0.5);}
+    9%{transform: translate(-110px,100px); color: rgba(255,255,255,0.6);}
+    10.5%{transform: translate(-100px,100px); color: rgba(255,255,255,0.7);}
+    12%{transform: translate(-90px,100px); color: rgba(255,255,255,0.8);}
+    14.5%{transform: translate(-80px,100px); color: rgba(255,255,255,0.9);}
+    16%{transform: translate(-70px,100px); color: rgba(255,255,255,0.95);}
+    17.5%{transform: translate(-60px,100px)}
+    19%{transform: translate(-50px,100px)}
+    20.5%{transform: translate(-40px,100px)}
+    22%{transform: translate(-30px,100px)}
+    23.5%{transform: translate(-20px,100px)}
+    25%{transform: translate(-10px,100px)}
+    26.5%{transform: translate(0px,100px)}
+    28%{transform: translate(10px,100px)}
+    29.5%{transform: translate(20px,100px)}
+    31%{transform: translate(30px,100px)}
+    32.5%{transform: translate(40px,100px)}
+    34%{transform: translate(50px,100px)}
+    35.5%{transform: translate(60px,100px)}
+    37%{transform: translate(70px,100px)}
+    38.5%{transform: translate(80px,100px)}
+    40%{transform: translate(90px,100px); color: rgba(255,255,255,0.9);}
+    41.5%{transform: translate(100px,100px); color: rgba(255,255,255,0.8);}
+    43%{transform: translate(110px,100px); color: rgba(255,255,255,0.7);}
+    44.5%{transform: translate(120px,100px); color: rgba(255,255,255,0.6);}
+    46%{transform: translate(130px,100px); color: rgba(255,255,255,0.5);}
+    47.5%{transform: translate(140px,100px); color: rgba(255,255,255,0.4);}
+    49%{transform: translate(150px,100px); color: rgba(255,255,255,0.3);}
+    50.5%{transform: translate(160px,100px); color: rgba(255,255,255,0.2);}
+    52%{transform: translate(170px,100px); color: rgba(255,255,255,0.1);}
+    53.5%{transform: translate(160px,100px); color: rgba(255,255,255,0.2);}
+    55%{transform: translate(150px,100px); color: rgba(255,255,255,0.3);}
+    56.5%{transform: translate(140px,100px); color: rgba(255,255,255,0.4);}
+    58%{transform: translate(130px,100px); color: rgba(255,255,255,0.5);}
+    59.5%{transform: translate(120px,100px); color: rgba(255,255,255,0.6);}
+    61%{transform: translate(110px,100px); color: rgba(255,255,255,0.7);}
+    62.5%{transform: translate(100px,100px); color: rgba(255,255,255,0.8);}
+    64%{transform: translate(90px,100px); color: rgba(255,255,255,0.9);}
+    65.5%{transform: translate(80px,100px)}
+    67%{transform: translate(70px,100px)}
+    68.5%{transform: translate(60px,100px)}
+    70%{transform: translate(50px,100px)}
+    71.5%{transform: translate(40px,100px)}
+    73%{transform: translate(30px,100px)}
+    74.5%{transform: translate(20px,100px)}
+    76%{transform: translate(10px,100px)}
+    77.5%{transform: translate(0px,100px)}
+    79%{transform: translate(-10px,100px)}
+    80.5%{transform: translate(-20px,100px)}
+    82%{transform: translate(-30px,100px)}
+    83.5%{transform: translate(-40px,100px)}
+    85%{transform: translate(-50px,100px)}
+    86.5%{transform: translate(-60px,100px)}
+    88%{transform: translate(-70px,100px)}
+    89.5%{transform: translate(-80px,100px)}
+    91%{transform: translate(-90px,100px); color: rgba(255,255,255,0.9);}
+    92.5%{transform: translate(-100px,100px); color: rgba(255,255,255,0.8);}
+    94%{transform: translate(-110px,100px); color: rgba(255,255,255,0.7);}
+    95%{transform: translate(-120px,100px); color: rgba(255,255,255,0.6);} 
+    96%{transform: translate(-130px,100px); color: rgba(255,255,255,0.5);}
+    97%{transform: translate(-140px,100px); color: rgba(255,255,255,0.4);}
+    98%{transform: translate(-150px,100px); color: rgba(255,255,255,0.3);}
+    99%{transform: translate(-160px,100px); color: rgba(255,255,255,0.2);}
+    100%{transform: translate(-170px,100px); color: rgba(255,255,255,0.1);}
+  }
+  @keyframes ani2{
+    0%{transform: translate(-170px,185px); color: rgba(255,255,255,0.1);}
+    1.5%{transform: translate(-160px,185px); color: rgba(255,255,255,0.1);}
+    3%{transform: translate(-150px,185px); color: rgba(255,255,255,0.2);}
+    4.5%{transform: translate(-140px,185px); color: rgba(255,255,255,0.3);}
+    6%{transform: translate(-130px,185px); color: rgba(255,255,255,0.4);}
+    7.5%{transform: translate(-120px,185px); color: rgba(255,255,255,0.5);}
+    9%{transform: translate(-110px,185px); color: rgba(255,255,255,0.6);}
+    10.5%{transform: translate(-100px,185px); color: rgba(255,255,255,0.7);}
+    12%{transform: translate(-90px,185px); color: rgba(255,255,255,0.8);}
+    14.5%{transform: translate(-80px,185px); color: rgba(255,255,255,0.9);}
+    16%{transform: translate(-70px,185px); color: rgba(255,255,255,0.95);}
+    17.5%{transform: translate(-60px,185px)}
+    19%{transform: translate(-50px,185px)}
+    20.5%{transform: translate(-40px,185px)}
+    22%{transform: translate(-30px,185px)}
+    23.5%{transform: translate(-20px,185px)}
+    25%{transform: translate(-10px,185px)}
+    26.5%{transform: translate(0px,185px)}
+    28%{transform: translate(10px,185px)}
+    29.5%{transform: translate(20px,185px)}
+    31%{transform: translate(30px,185px)}
+    32.5%{transform: translate(40px,185px)}
+    34%{transform: translate(50px,185px)}
+    35.5%{transform: translate(60px,185px)}
+    37%{transform: translate(70px,185px)}
+    38.5%{transform: translate(80px,185px)}
+    40%{transform: translate(90px,185px); color: rgba(255,255,255,0.9);}
+    41.5%{transform: translate(100px,185px); color: rgba(255,255,255,0.8);}
+    43%{transform: translate(110px,185px); color: rgba(255,255,255,0.7);}
+    44.5%{transform: translate(120px,185px); color: rgba(255,255,255,0.6);}
+    46%{transform: translate(130px,185px); color: rgba(255,255,255,0.5);}
+    47.5%{transform: translate(140px,185px); color: rgba(255,255,255,0.4);}
+    49%{transform: translate(150px,185px); color: rgba(255,255,255,0.3);}
+    50.5%{transform: translate(160px,185px); color: rgba(255,255,255,0.2);}
+    52%{transform: translate(170px,185px); color: rgba(255,255,255,0.1);}
+    53.5%{transform: translate(160px,185px); color: rgba(255,255,255,0.2);}
+    55%{transform: translate(150px,185px); color: rgba(255,255,255,0.3);}
+    56.5%{transform: translate(140px,185px); color: rgba(255,255,255,0.4);}
+    58%{transform: translate(130px,185px); color: rgba(255,255,255,0.5);}
+    59.5%{transform: translate(120px,185px); color: rgba(255,255,255,0.6);}
+    61%{transform: translate(110px,185px); color: rgba(255,255,255,0.7);}
+    62.5%{transform: translate(100px,185px); color: rgba(255,255,255,0.8);}
+    64%{transform: translate(90px,185px); color: rgba(255,255,255,0.9);}
+    65.5%{transform: translate(80px,185px)}
+    67%{transform: translate(70px,185px)}
+    68.5%{transform: translate(60px,185px)}
+    70%{transform: translate(50px,185px)}
+    71.5%{transform: translate(40px,185px)}
+    73%{transform: translate(30px,185px)}
+    74.5%{transform: translate(20px,185px)}
+    76%{transform: translate(10px,185px)}
+    77.5%{transform: translate(0px,185px)}
+    79%{transform: translate(-10px,185px)}
+    80.5%{transform: translate(-20px,185px)}
+    82%{transform: translate(-30px,185px)}
+    83.5%{transform: translate(-40px,185px)}
+    85%{transform: translate(-50px,185px)}
+    86.5%{transform: translate(-60px,185px)}
+    88%{transform: translate(-70px,185px)}
+    89.5%{transform: translate(-80px,185px)}
+    91%{transform: translate(-90px,185px); color: rgba(255,255,255,0.9);}
+    92.5%{transform: translate(-100px,185px); color: rgba(255,255,255,0.8);}
+    94%{transform: translate(-110px,185px); color: rgba(255,255,255,0.7);}
+    95%{transform: translate(-120px,185px); color: rgba(255,255,255,0.6);} 
+    96%{transform: translate(-130px,185px); color: rgba(255,255,255,0.5);}
+    97%{transform: translate(-140px,185px); color: rgba(255,255,255,0.4);}
+    98%{transform: translate(-150px,185px); color: rgba(255,255,255,0.3);}
+    99%{transform: translate(-160px,185px); color: rgba(255,255,255,0.2);}
+    100%{transform: translate(-170px,185px); color: rgba(255,255,255,0.1);}
+  }
+
+
+.box1 span:first-of-type{
+  display: block;
+  /* color: #AAA;
+  font-weight: 700; */
+  color: transparent;
+  background-color: #333;
+  width: 64%;
+  text-align: center;
+  margin: auto;
+  transform: translateY(125px);
+  letter-spacing: 6px;
+  /* animation: ani 1.2s infinite alternate; */
+}
+.box1 span:nth-of-type(2){
+  display: block;
+  /* color: #AAA;
+  font-weight: 700; */
+  color: #fff;
+  /* background-color: #333; */
+  width: 64%;
+  text-align: center;
+  margin: auto;
+  transform: translateY(100px);
+  letter-spacing: 6px;
+  animation: ani 7s infinite;
+}
+.box1 span:last-of-type{
+  display: block;
+  /* color: #AAA;
+  font-weight: 700; */
+  color: #fff;
+  /* background-color: #333; */
+  width: 64%;
+  text-align: center;
+  margin: auto;
+  transform: translateY(185px);
+  letter-spacing: 6px;
+  animation: ani2 7s infinite;
+}
+.box1 span:nth-of-type(3){
+  display: block;
+  /* color: #AAA;
+  font-weight: 700; */
+  color: transparent;
+  background-color: #333;
+  width: 64%;
+  text-align: center;
+  margin: auto;
+  transform: translateY(210px);
+  letter-spacing: 6px;
+}
+
+.box1 p:first-of-type{
+  color: #333;
+  text-align: center;
+  transform: translateY(110px);
+}
+
+.box1 p:last-of-type{
+  color: #333;
+  text-align: center;
+  transform: translateY(210px);
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////gallery */
+
+.box2{
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+  height: 1000px;
+  width: 1200px;
+  margin: 40px 0;
+}
+.box2 .gallery span{
+  display: block;
+  background-color: rgba(245, 220, 220, 0.1);
+  width: 440px;
+  height: 660px;
+  transform: translateY(660px);
+  transition: 0.5s;
+}
+
+.sort{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+.sort li{
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 6px 7px; /* 전체에패딩,fontweight까지 넣어주기 */
+  font-family: 'Forum', cursive;
+}
+.sort li:nth-child(1){
+  background-color: lemonchiffon;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 6px 6px;
+  font-weight: 700;
+}
+.sort li:nth-child(2){
+   /* 호버전에 패딩넣었는데 움직임-> 얘하나가 아니라 전체에 패딩 넣어야. */
+}
+.sort li:nth-child(2):hover{
+  background-color: lemonchiffon;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 6px 6px;
+  font-weight: 700;
+}
+
+.gallery{
+  height: 100vh;
+  display: flex;
+}
+.gallery li{
+  border-right: 1px solid 000;
+  flex: 1; /* 5등분 */
+  position: relative;
+  overflow: hidden;
+  filter: grayscale(1);
+  transition: 0.5s;
+  margin-top: 90px;
+  height: 660px;
+}
+.gallery li:last-child{border-right: none;}
+.gallery li:nth-child(1){background: url(../image/grid1.jpg) no-repeat center center;
+background-size: 440px 660px;}
+.gallery li:nth-child(2){background: url(../image/grid2.jpg) no-repeat bottom;
+  background-size: 440px 660px;}
+.gallery li:nth-child(3){background: url(../image/grid3.jpg) no-repeat center center;
+  background-size: 440px 660px;}
+.gallery li:nth-child(4){background: url(../image/grid4.jpg) no-repeat center center;
+  background-size: 440px 660px;}
+.gallery li:nth-child(5){background: url(../image/grid5.jpg) no-repeat center center;
+  background-size: 440px 660px;}
+
+.gallery li:hover{
+  flex: 2;
+  filter: none;
+  cursor: pointer;
+}
+
+.gallery li:hover span{
+  transform: translateY(0px);
+}
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////dress&makeup */
+.box3{
+  width: 1200px;
+  height: 1000px;
+  border-bottom: 1px solid #000;
+  margin: 40px 0;
+}
+.box3 .img{
+  background-color: #ddd;
+  width: 1000px;
+  height: 580px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box3 ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.box3 ul li{
+  display: inline-block;
+  margin-top: 70px;
+  padding: 8px 9px;
+  font-family: 'Forum', cursive;
+}
+.box3 ul li:not(.chk):hover{
+  background-color: lemonchiffon;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 6px 8px;
+  font-weight: 700;
+}
+.chk{
+  background-color: lemonchiffon;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 6px 8px;
+  font-weight: 700;
+}
+
+.box3 img{
+  width: 340px;
+  height: 413px;
+}
+
+input[name=tabmenu]{display: none;}
+.figure{
+  /* border: 1px solid #000; */
+  width: 840px;
+  height: 600px;
+  overflow: hidden;
+  /*  다른드레스들 안보이게 */
+  position: relative;
+}
+.figure2{
+  width: 3360px;
+  height: 450px;
+  display: flex;
+  border: 1px solid #000;
+  border-left:1px solid transparent ;
+  position: absolute;
+  top: 80px;
+  transition: 0.5s;
+}
+.img1{
+  /* border: 1px solid plum; */
+  display: flex;
+}
+.img1 h4{
+  margin-bottom: 6px;
+  font-size: 30px;
+  font-family: 'Forum', cursive;
+}
+.img1 h5{
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.img1 h5 span{
+  font-weight: normal;
+  margin-bottom: 30px;
+  background-color: #000;
+  color: #fff;
+  padding-left: 3px;
+  padding-right: 250px;
+}
+.img1 p{
+  display: inline-block;
+  margin-bottom: 20px;
+  line-height: 34px;
+}
+.img1 div{
+  /* border: 1px solid #000; */
+  width: 400px;
+  height: 450px;
+  padding: 20px 60px 20px 40px;
+}
+
+@keyframes view{
+  0%{transform: rotate(0deg);}
+  25%{transform: rotate(4deg);}
+  50%{transform: rotate(0deg);}
+  75%{transform: rotate(-4deg);}
+  100%{transform: rotate(0deg);}
+}
+
+.img1 input[type=button]{
+  border-style: none;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  animation: view 1.5s linear infinite;
+}
+.img1 input[type=button]:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.tab-inner{
+  /* border: 1px solid pink; */
+  position: absolute;
+  left: 8%;
+  bottom: 10px;
+}
+
+
+.btn label[for="tab1"]{
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 44%;
+  bottom: 15px;
+  cursor: pointer;
+}
+.btn label[for="tab2"]{
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 48%;
+  bottom: 15px;
+  cursor: pointer;
+}
+.btn label[for="tab3"]{
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 52%;
+  bottom: 15px;
+  cursor: pointer;
+}
+.btn label[for="tab4"]{
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 56%;
+  bottom: 15px;
+  cursor: pointer;
+}
+.btn label:hover{
+  background-color: #000;
+}
+
+input[id=tab1]:checked ~.btn label[for=tab1],
+input[id=tab2]:checked ~.btn label[for=tab2],
+input[id=tab3]:checked ~.btn label[for=tab3],
+input[id=tab4]:checked ~.btn label[for=tab4]{
+  background-color: #000;
+}
+
+input[id=tab1]:checked ~.figure .figure2{left: 0;}
+input[id=tab2]:checked ~.figure .figure2{left: -840px;}
+input[id=tab3]:checked ~.figure .figure2{left: -1680px;}
+input[id=tab4]:checked ~.figure .figure2{left: -2520px;}
+
+
+
+
+/* //////////////////////////////////////////////////////////contact */
+
+.box4{
+  width: 1200px;
+  height: 800px;
+}
+
+.box4 .form{
+  background-color: #ddd;
+  width: 500px;
+  height: 600px;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.box4 h3{
+  margin-top: 250px;
+  margin-bottom: 80px;
+}
+
+.line{
+  width: 450px;
+  height: 550px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  text-align: center;
+}
+.line h4{
+  margin-top: 40px;
+}
+.line p{
+  margin-top: 5px;
+}
+.line p span{
+  color: #fff;
+  background-color: #111;
+  padding: 0 4px 1px;
+}
+form{
+  position: absolute;
+  top: 25%;
+  left: 4%;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=submit]{
+  display: block;
+  margin: 15px;
+  margin-bottom: 25px;
+  width: 380px;
+  height: 34px;
+  border-style: none;
+  text-align: center;
+}
+input[type=submit]{
+  cursor: pointer;
+  background-color: #222;
+  color: #fff;
+  transition: 0.35s;
+}
+input[type=submit]:hover{
+  background-color: #fff;
+  color: #111;
+}
+/* textarea{
+  border-style: none;
+  text-align: center;
+  height: 34px;
+} */
+
+
+
+.box4 .map{
+  float: left;
+  margin-left: 20px;
+  transform: translateY(40px);
+}
+.map iframe{
+  width: 600px;
+  height: 400px;
+}
+.map{
+  margin-top: 30px;
+}
+.map-cap{
+  position: absolute;
+  left: 30px;
+  transform: translateY(-140px);
+}
+.map-cap b{
+  color: rgb(252, 63, 252);
+}
+
+
+
+
+/* footer________________________________________________________________________________ */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: gray;
+  width: 100vw;
+  height: 230px;
+  transform: translateY(4000px);
+  z-index: 1;
+}
+
+footer div{
+  transform: translateY(-40px);
+}
+footer div span{
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+}
+
+address{
+  font-style: normal;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+}
+
+.fa{
+  font-size: 34px;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: 0.35s;
+}
+
+.fa:hover{
+  transform: scale(1.2);
+  color: lemonchiffon;
+}
+
+
